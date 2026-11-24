@@ -14,8 +14,8 @@ Work top to bottom. Don't skip ahead. One small task at a time.
 - [x] Install JDK 17, Maven, Docker Desktop, IntelliJ, Postman. Check: `java -version` shows 17.
 - [x] Create the GitHub repo `seatbook`. Add a `.gitignore` for Java and IntelliJ.
 - [x] Generate the project at start.spring.io: Maven, Java 17, Spring Boot 3.x, deps: Web, Security, Data JPA, Validation, PostgreSQL Driver, Liquibase, Lombok.
-- [ ] Add springdoc-openapi to the pom. Open Swagger UI to confirm it runs.
-- [ ] Add `docker-compose.yml` with PostgreSQL. Run `docker compose up -d`.
+- [x] Add springdoc-openapi to the pom. Open Swagger UI to confirm it runs.
+- [x] Add `docker-compose.yml` with PostgreSQL. Run `docker compose up -d`.
 - [ ] Connect the app to the database through env variables. App starts without errors.
 - [ ] Push the first commit and paste in the README.
 
@@ -38,7 +38,12 @@ Work top to bottom. Don't skip ahead. One small task at a time.
 - [ ] List events with paging.
 - [ ] List seats of an event with their status.
 - [ ] Validation on request bodies.
-- [ ] Tests for each endpoint.
+- [ ] Tests for each endpoint<!-- Source: https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui -->
+<dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-ui</artifactId>
+    <version>1.8.0</version>
+</dependency>.
 
 ## Step 4: Booking (the core)
 - [ ] Hold a seat: create a PENDING booking, set `expires_at`.
